@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.example.backend.repository.TaskRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.598 s <<< FAILURE! -- in com.example.backend.repository.TaskRepositoryTest
+com.example.backend.repository.TaskRepositoryTest.findTop5TasksNativeReturnsNewestFiveInDescendingIdOrder -- Time elapsed: 0.074 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting actual:
+  [8L, 7L, 6L, 5L, 4L]
+to contain exactly (and in same order):
+  [7L, 6L, 5L, 4L, 3L]
+but some elements were not found:
+  [3L]
+and others were not expected:
+  [8L]
+
+	at com.example.backend.repository.TaskRepositoryTest.findTop5TasksNativeReturnsNewestFiveInDescendingIdOrder(TaskRepositoryTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
