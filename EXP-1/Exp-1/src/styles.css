@@ -1,0 +1,162 @@
+:root {
+  --bg: #0f1220;
+  --card-bg: #1b1f33;
+  --accent: #6c5ce7;
+  --accent-hover: #8375ea;
+  --text: #eef0fb;
+  --muted: #9aa0c3;
+  --error: #ff6b6b;
+  --success: #2ecc71;
+  --border: #2c3150;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-shell {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.app-header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 0;
+  font-size: 14px;
+}
+
+.app-main-single {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.field-label {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 16px 0 6px;
+}
+
+.select,
+.textarea {
+  width: 100%;
+  background: #12152a;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.textarea-error {
+  border-color: var(--error);
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.count {
+  color: var(--muted);
+}
+
+.count-negative {
+  color: var(--error);
+  font-weight: 600;
+}
+
+.error-msg {
+  color: var(--error);
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+}
+
+.last-posted {
+  margin-top: 20px;
+  padding: 14px;
+  background: #12152a;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.last-posted p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  white-space: pre-wrap;
+}
